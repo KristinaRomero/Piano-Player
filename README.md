@@ -23,4 +23,3 @@ This project is an interactive piano player that allows users to play keys and f
 - **JavaScript**: For dynamic functionality and event handling.
 
 ## Project Structure
-
