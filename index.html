@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -8,78 +8,97 @@
 
 <body>
   <p class='title'>Piano Player</p>
-  <p id='demo'>Follow the song below to play  the piano.</p>
+  <p id='demo'>Follow the song below to play the piano.</p>
+
+  <!-- Piano Section -->
   <section class="piano">
-    <section id='c-key' class="key">
-      <section class='keynote'>C</section>
-    </section>
-    <section id='c-sharp-key' class="black-key">
-      <section class='black-keynote'>C#</section>
-    </section>
-    <section id='d-key' class="key">
-      <section class='keynote'>D</section>
-    </section>
-    <section id='d-sharp-key' class="black-key">
-      <section class='black-keynote'>D#</section>
-    </section>
-    <section id='e-key' class="key">
-      <section class='keynote'>E</section>
-    </section>
-    <section id='f-key' class="key">
-      <section class='keynote'>F</section>
-    </section>
-    <section id='f-sharp-key' class="black-key">
-      <section class='black-keynote'>F#</section>
-    </section>
-    <section id='g-key' class="key">
-      <section class='keynote'>G</section>
-    </section>
-    <section id='g-sharp-key' class="black-key">
-      <section class='black-keynote'>G#</section>
-    </section>
-    <section id='a-key' class="key">
-      <section class='keynote'>A</section>
-    </section>
-    <section id='a-sharp-key' class="black-key">
-      <section class='black-keynote'>A#</section>
-    </section>
-    <section id='b-key' class="key">
-      <section class='keynote'>B</section>
-    </section>
-    <section id='high-c-key' class="key">
-      <div class='keynote'>C</div>
-    </section>
+    <div class="key-container">
+      <section id="c-key" class="key">
+        <section class="keynote">C</section>
+      </section>
+      <section id="c-sharp-key" class="black-key">
+        <section class="black-keynote">C#</section>
+      </section>
+    </div>
+    <div class="key-container">
+      <section id="d-key" class="key">
+        <section class="keynote">D</section>
+      </section>
+      <section id="d-sharp-key" class="black-key">
+        <section class="black-keynote">D#</section>
+      </section>
+    </div>
+    <div class="key-container">
+      <section id="e-key" class="key">
+        <section class="keynote">E</section>
+      </section>
+    </div>
+    <div class="key-container">
+      <section id="f-key" class="key">
+        <section class="keynote">F</section>
+      </section>
+      <section id="f-sharp-key" class="black-key">
+        <section class="black-keynote">F#</section>
+      </section>
+    </div>
+    <div class="key-container">
+      <section id="g-key" class="key">
+        <section class="keynote">G</section>
+      </section>
+      <section id="g-sharp-key" class="black-key">
+        <section class="black-keynote">G#</section>
+      </section>
+    </div>
+    <div class="key-container">
+      <section id="a-key" class="key">
+        <section class="keynote">A</section>
+      </section>
+      <section id="a-sharp-key" class="black-key">
+        <section class="black-keynote">A#</section>
+      </section>
+    </div>
+    <div class="key-container">
+      <section id="b-key" class="key">
+        <section class="keynote">B</section>
+      </section>
+    </div>
+    <div class="key-container">
+      <section id="high-c-key" class="key">
+        <section class="keynote">C</section>
+      </section>
+    </div>
   </section>
 
+  <!-- Lyrics Section -->
   <section id='lyrics'>
-    <section id='column-one'>
+    <div id='column-one'>
       <section id="word-one">HAP-</section>
       <section id="letter-note-one">G</section>
-    </section>
-    <section id='column-two'>
+    </div>
+    <div id='column-two'>
       <section id="word-two">PY</section>
       <section id="letter-note-two">G</section>
-    </section>
-    <section id='column-three'>
+    </div>
+    <div id='column-three'>
       <section id="word-three">BIRTH-</section>
       <section id="letter-note-three">A</section>
-    </section>
-    <section id='column-four'>
+    </div>
+    <div id='column-four'>
       <section id="word-four">DAY</section>
       <section id="letter-note-four">G</section>
-    </section>
-    <section id='column-five'>
+    </div>
+    <div id='column-five'>
       <section id="word-five">TO</section>
       <section id="letter-note-five">C</section>
-    </section>
-    <section id='column-six'>
+    </div>
+    <div id='column-six'>
       <section id="word-six">YOU</section>
       <section id="letter-note-six">B</section>
-    </section>
-    <section id='column-optional' class='column-optional'>
+    </div>
+    <div id='column-optional' class='column-optional'>
       <section id="word-optional">END</section>
       <section id="letter-note-optional">A</section>
-    </section>
+    </div>
 
     <button id="first-next-line">Line 2</button>
     <button id="second-next-line">Line 3</button>
@@ -87,7 +106,23 @@
     <button id="fourth-next-line">Reset</button>
   </section>
 
-  <script  src="main.js"></script>
+  <!-- Audio Files -->
+  <section>
+    <audio id="c-note" src="resources/piano-c_C_major.wav"></audio>
+    <audio id="c#-note" src="resources/piano-c_C#_major.wav"></audio>
+    <audio id="d-note" src="resources/piano-d_D_major.wav"></audio>
+    <audio id="d#-note" src="resources/piano-note-d_1bpm_D#.wav"></audio>
+    <audio id="e-note" src="resources/piano-e_E_major.wav"></audio>
+    <audio id="f-note" src="resources/piano-f_F_major.wav"></audio>
+    <audio id="f#-note" src="resources/piano-f_F#_major.wav"></audio>
+    <audio id="g-note" src="resources/piano-key-g-major_G_major.wav"></audio>
+    <audio id="g#-note" src="resources/piano-g_G#_major.wav"></audio>
+    <audio id="a-note" src="resources/piano-a_A_major.wav"></audio>
+    <audio id="a#-note" src="resources/piano-a_A#_major.wav"></audio>
+    <audio id="b-note" src="resources/piano-b_B_major.wav"></audio>
+  </section>
 
+  <script src="script.js"></script>
 </body>
+
 </html>

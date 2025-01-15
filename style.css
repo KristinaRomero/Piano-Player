@@ -22,34 +22,46 @@ body{
     letter-spacing: 1px;
     font-style: italic;
   }
-  .piano{
-    width: 305px;
-    height: 210px;
-    display: block;
+  
+  .piano {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: auto;
     margin: 0 auto;
     background-color: #fd4d3f;
-    margin-top: 30px;
+    padding: 10px;
   }
-  .key{
-    width: 30px;
-    height: 200px;
+  
+  .key-container {
+    position: relative;
     display: inline-block;
-    border: solid #141c3a 2px;
-    box-shadow: 2px 5px;
+    width: 40px; /* Space for black and white keys */
+  }
+  
+  .key {
+    width: 40px;
+    height: 200px;
     background-color: white;
+    border: 2px solid #141c3a;
+    box-shadow: 2px 5px;
     color: #141c3a;
   }
-  .black-key{
-    width: 25px;
-    height: 100px;
-    display: inline-block;
-    background-color: #141c3a;
-    color: white;
+  
+  .black-key {
     position: absolute;
-    margin-left: -12px;
-    padding: 0px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 100px;
+    background-color: #141c3a;
+    z-index: 1;
+    color: white;
   }
-  .keynote{
+  
+  .keynote {
     width: 20px;
     height: 20px;
     text-align: center;
@@ -58,7 +70,8 @@ body{
     margin-top: 175px;
     color: #141c3a;
   }
-  .black-keynote{
+  
+  .black-keynote {
     width: 20px;
     height: 20px;
     text-align: center;
@@ -66,6 +79,8 @@ body{
     margin: 0 auto;
     margin-top: 75px;
   }
+  
+
   #lyrics{
     width: 400px;
     height: 240px;
